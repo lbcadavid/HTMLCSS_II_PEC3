@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <title>Cooking Contest 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+        header h1 {
+            font-size: 18px;
+            margin: 0;
+            color: #000000;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin: auto;
+            padding: 50px;
+            background: #ffffff;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #000000;
+        }
+        h4 {
+            text-align: center;
+            font-weight: normal;
+            color: #666;
+            margin-top: -10px;
+        }
+        h4:first-of-type {
+            padding-bottom: 150px;
+        }
+        img.full-width {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+            display: block;
+            margin: 20px 0;
+        }
+        #recipes h2 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        #recipes h4 {
+            text-align: left;
+            padding-bottom: 50px;
+        }
+        .recipes {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            border: none;
+            padding: 20px;
+            background: #ffffff;
+            flex: 1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .card h3 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            flex-basis: 100%;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .card p:first-of-type {
+            font-weight: bold;
+        }
+        .card div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        footer h1 {
+            font-size: 18px;
+            text-align: left;
+            margin: 0 20px;
+        }
+        footer h3 {
+            font-size: 16px;
+            text-align: left;
+            font-weight: 700;
+        }
+        footer .footer-sections {
+            display: flex;
+            justify-content: flex-end;
+            gap: 70px;
+            padding: 20px;
+        }
+        footer .footer-sections div {
+            text-align: right;
+        }
+        footer p {
+            margin-top: 20px;
+            text-align: left;
+        }
+        hr {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cooking Contest 2024 Edition</h1>
+        <nav>
+            <a href="#recipes">Recipes</a>
+            <a href="#contestants">Contestants</a>
+            <a href="#editions">Contest Editions</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contestants</h2>
+        <h4>This section describes the recipes of the best contestants</h4>
+        <img class="full-width" src="./assets/images/conferencia.jpg" alt="Featured image">
+        <section id="recipes">
+            <h2>The Recipes</h2>
+            <h4>These are the recipes of the best contestants</h4>
+            <div class="recipes">
+                <div class="card">
+                    <h3>Cajun Seafood Pasta</h3>
+                    <img src="./assets/images/mujer.jpeg" alt="John Cooper">
+                    <div>
+                        <p>John Cooper</p>
+                        <p>This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Cedar Planked Salmon</h3>
+                    <img src="./assets/images/mujer.jpeg" alt="Marta Alonso">
+                    <div>
+                        <p>Marta Alonso</p>
+                        <p>Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Poulet au Vinaigre</h3>
+                    <img src="./assets/images/mujer.jpeg" alt="Mary Ann Stones">
+                    <div>
+                        <p>Mary Ann Stones</p>
+                        <p>Irresistible chicken, cooked with vinegar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <hr>
+        <h1>Cooking Contest 2024 Edition</h1>
+        <div class="footer-sections">
+            <div>
+                <h3>Recipes</h3>
+                <p>Cajun Seafood Pasta</p>
+                <p>Cedar Planked Salmon</p>
+                <p>Poulet au Vinaigre</p>
+            </div>
+            <div>
+                <h3>Contestants</h3>
+                <p>John Cooper</p>
+                <p>Marta Alonso</p>
+                <p>Mary Ann Stones</p>
+            </div>
+            <div>
+                <h3>Contest editions</h3>
+                <p>2022</p>
+                <p>2023</p>
+                <p>2024</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Cooking Contest</p>
+    </footer>
+</body>
+</html>

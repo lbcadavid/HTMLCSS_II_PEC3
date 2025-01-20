@@ -9,6 +9,7 @@
 /**
  * Write any other JavaScript below
  */
+import "flowbite";
 
 +( function() {
   const university = "UOC";

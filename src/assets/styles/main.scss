@@ -7,6 +7,8 @@
  * Import variables
  */
 
+@tailwind base;
+@tailwind components;
 @import "variables";
 
 /**
@@ -18,12 +20,19 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+/*
+  * Importamos FontOwesome
+ */
+ @import "npm:@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
 @import "layouts/home";
+@import "layouts/generico";
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!

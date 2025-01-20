@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <title>Contacto</title>
+  </head>
+  <body>
+
+    <include src="./views/header.html"></include>
+
+    <main class="content flex flex-col">
+
+      <section id="contact-form" class="flex-grow sm:px-[20px] md:px-[10vh] lg:px-[40vh] mb-6">
+
+        <div class="text-center">
+          <h2 class="h2-title">Formulario de Contacto</h2>
+        </div>
+
+        <div class="mx-auto bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+          <form name="contact" method="POST" netlify>
+          
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-6">
+
+              <div class="input-field">
+                <label for="first-name" class="texto-input">Nombre</label>
+                <input type="text" class="input-elemento" id="first-name" name="first-name" required>
+              </div>
+
+              <div class="input-field">
+                <label for="last-name" class="texto-input">Primer Apellido</label>
+                <input type="text" class="input-elemento" id="last-name" name="last-name" required>
+              </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-6">
+
+              <div class="input-field">
+                <label for="second-last-name" class="texto-input">Segundo Apellido</label>
+                <input type="text" class="input-elemento" id="second-last-name" name="second-last-name" required>
+              </div>
+
+              <div class="input-field">
+                <label for="email" class="texto-input">Correo Electrónico</label>
+                <input type="email" class="input-elemento" id="email" name="email" required>
+              </div>
+
+            </div>
+
+            <div class="input-field mb-9">
+              <label for="message" class="texto-input">Mensaje</label>
+              <textarea class="input-elemento" id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="input-field mb-10">
+              <button type="submit" class="btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+html {
+    @apply font-body;
+}
+
+.texto-media {
+    @apply text-menu-mobile md:text-menu-tablet lg:text-menu font-bold text-menu-color-blue;
+}
+
+@layer components {
+
+    .h2-title {
+        @apply sm:text-[28px] md:text-[32px] lg:text-[36px] text-[#025fc4] pb-[20px];
+    }
+
+    /* Extracción input */
+
+    .input-field {
+        @apply px-6;
+    }
+
+    .texto-input {
+        @apply mb-[8px] text-menu-mobile md:text-menu-tablet lg:text-menu text-[#025fc4];
+    }
+
+    .input-elemento {
+        @apply border border-gray-200 rounded-md w-full;
+    }
+
+    /* Extracción boton primario */
+
+    .btn-primary {
+        @apply w-full py-[.375rem] px-[.75rem] bg-[#0d6efd] text-white rounded-md hover:bg-blue-600 focus:outline-none;
+    }
+
+    .card-transition {
+        @apply shadow-md transition-all duration-200 ease-in-out hover:shadow-lg hover:translate-y-[-5px]
+    }
+}
